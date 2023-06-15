@@ -9,6 +9,26 @@
 /* Begin PBXBuildFile section */
 		4AD10DF07293AB93A3F8F2CB /* Pods_WhaletherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0549FD9443AA198D2EF55D5E /* Pods_WhaletherTests.framework */; };
 		870DD76CA3C01D1C7ACC619A /* Pods_Whalether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B62C06A46D179924331361B /* Pods_Whalether.framework */; };
+		9202ACD92A3B618A007E33DA /* WheatherWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACD82A3B618A007E33DA /* WheatherWorkerSpy.swift */; };
+		9202ACDB2A3B6214007E33DA /* WeatherInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACDA2A3B6214007E33DA /* WeatherInteractorTests.swift */; };
+		9202ACDD2A3B639C007E33DA /* WeatherPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACDC2A3B639C007E33DA /* WeatherPresenterSpy.swift */; };
+		9202ACDF2A3B6550007E33DA /* WeatherDisplayLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACDE2A3B6550007E33DA /* WeatherDisplayLogicSpy.swift */; };
+		9202ACE32A3B659E007E33DA /* WeatherPresterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACE22A3B659E007E33DA /* WeatherPresterTests.swift */; };
+		9202ACE72A3B6910007E33DA /* RegisterWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACE62A3B6910007E33DA /* RegisterWorkerSpy.swift */; };
+		9202ACE92A3B696E007E33DA /* RegisterPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACE82A3B696E007E33DA /* RegisterPresenterSpy.swift */; };
+		9202ACEB2A3B6995007E33DA /* RegisterDisplaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACEA2A3B6995007E33DA /* RegisterDisplaySpy.swift */; };
+		9202ACED2A3B69BF007E33DA /* RegisterInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACEC2A3B69BF007E33DA /* RegisterInteractorTests.swift */; };
+		9202ACEF2A3B6B9A007E33DA /* RegisterPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACEE2A3B6B9A007E33DA /* RegisterPresenterTests.swift */; };
+		9202ACF32A3B6CDF007E33DA /* LoginWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACF22A3B6CDF007E33DA /* LoginWorkerSpy.swift */; };
+		9202ACF52A3B6D3D007E33DA /* LoginPresentationLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACF42A3B6D3D007E33DA /* LoginPresentationLogicSpy.swift */; };
+		9202ACF72A3B6D81007E33DA /* LoginDisplayLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACF62A3B6D81007E33DA /* LoginDisplayLogicSpy.swift */; };
+		9202ACF92A3B6DA5007E33DA /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACF82A3B6DA5007E33DA /* LoginInteractorTests.swift */; };
+		9202ACFB2A3B6E93007E33DA /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACFA2A3B6E93007E33DA /* LoginPresenterTests.swift */; };
+		9202ACFF2A3B6F6A007E33DA /* UserProfileWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202ACFE2A3B6F6A007E33DA /* UserProfileWorkerSpy.swift */; };
+		9202AD022A3B6FB3007E33DA /* UserProfilePresentationLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202AD012A3B6FB3007E33DA /* UserProfilePresentationLogicSpy.swift */; };
+		9202AD042A3B6FDB007E33DA /* UserProfileDisplayLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202AD032A3B6FDB007E33DA /* UserProfileDisplayLogicSpy.swift */; };
+		9202AD062A3B7003007E33DA /* UserProfileInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202AD052A3B7003007E33DA /* UserProfileInteractorTests.swift */; };
+		9202AD082A3B728C007E33DA /* UserProfilePresentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202AD072A3B728C007E33DA /* UserProfilePresentTests.swift */; };
 		9278ABEB2A3A07A1008B5F19 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278ABE52A3A07A1008B5F19 /* LoginPresenter.swift */; };
 		9278ABEC2A3A07A1008B5F19 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278ABE62A3A07A1008B5F19 /* LoginWorker.swift */; };
 		9278ABED2A3A07A1008B5F19 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9278ABE72A3A07A1008B5F19 /* LoginRouter.swift */; };
@@ -43,27 +63,16 @@
 		927CD7CD2A3773A90007F318 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CD7C72A3773A90007F318 /* WeatherViewController.swift */; };
 		927CD7CE2A3773A90007F318 /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927CD7C82A3773A90007F318 /* WeatherInteractor.swift */; };
 		927CD7D02A3774700007F318 /* WeatherViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927CD7CF2A3774700007F318 /* WeatherViewControllerStoryboard.storyboard */; };
-		927CD7D22A377B570007F318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927CD7D12A377B570007F318 /* Main.storyboard */; };
 		9294F8262A38CABB007D899D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294F8252A38CABB007D899D /* UIViewExtension.swift */; };
 		9294F8292A38CD57007D899D /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294F8282A38CD57007D899D /* WeatherAPI.swift */; };
 		92E4E3982A3765B50092F6F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4E3972A3765B50092F6F5 /* AppDelegate.swift */; };
 		92E4E3A12A3765B60092F6F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E4E3A02A3765B60092F6F5 /* Assets.xcassets */; };
 		92E4E3A42A3765B60092F6F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E4E3A22A3765B60092F6F5 /* LaunchScreen.storyboard */; };
 		92E4E3AF2A3765B60092F6F5 /* WhaletherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4E3AE2A3765B60092F6F5 /* WhaletherTests.swift */; };
-		92E4E3B92A3765B60092F6F5 /* WhaletherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4E3B82A3765B60092F6F5 /* WhaletherUITests.swift */; };
-		92E4E3BB2A3765B60092F6F5 /* WhaletherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4E3BA2A3765B60092F6F5 /* WhaletherUITestsLaunchTests.swift */; };
-		E51713C29553F3964E408705 /* Pods_Whalether_WhaletherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B0B01E9163521D733B3446 /* Pods_Whalether_WhaletherUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		92E4E3AB2A3765B60092F6F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 92E4E38C2A3765B40092F6F5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92E4E3932A3765B50092F6F5;
-			remoteInfo = Whalether;
-		};
-		92E4E3B52A3765B60092F6F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 92E4E38C2A3765B40092F6F5 /* Project object */;
 			proxyType = 1;
@@ -80,6 +89,26 @@
 		2BB317F21893F14651879AB1 /* Pods-WhaletherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaletherTests.release.xcconfig"; path = "Target Support Files/Pods-WhaletherTests/Pods-WhaletherTests.release.xcconfig"; sourceTree = "<group>"; };
 		421EA633DCB082F02B6DAF52 /* Pods-WhaletherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaletherTests.debug.xcconfig"; path = "Target Support Files/Pods-WhaletherTests/Pods-WhaletherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5855D20EE7C8ABEA716B1781 /* Pods-Whalether-WhaletherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whalether-WhaletherUITests.debug.xcconfig"; path = "Target Support Files/Pods-Whalether-WhaletherUITests/Pods-Whalether-WhaletherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9202ACD82A3B618A007E33DA /* WheatherWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherWorkerSpy.swift; sourceTree = "<group>"; };
+		9202ACDA2A3B6214007E33DA /* WeatherInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractorTests.swift; sourceTree = "<group>"; };
+		9202ACDC2A3B639C007E33DA /* WeatherPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresenterSpy.swift; sourceTree = "<group>"; };
+		9202ACDE2A3B6550007E33DA /* WeatherDisplayLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDisplayLogicSpy.swift; sourceTree = "<group>"; };
+		9202ACE22A3B659E007E33DA /* WeatherPresterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresterTests.swift; sourceTree = "<group>"; };
+		9202ACE62A3B6910007E33DA /* RegisterWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorkerSpy.swift; sourceTree = "<group>"; };
+		9202ACE82A3B696E007E33DA /* RegisterPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenterSpy.swift; sourceTree = "<group>"; };
+		9202ACEA2A3B6995007E33DA /* RegisterDisplaySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDisplaySpy.swift; sourceTree = "<group>"; };
+		9202ACEC2A3B69BF007E33DA /* RegisterInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractorTests.swift; sourceTree = "<group>"; };
+		9202ACEE2A3B6B9A007E33DA /* RegisterPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenterTests.swift; sourceTree = "<group>"; };
+		9202ACF22A3B6CDF007E33DA /* LoginWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerSpy.swift; sourceTree = "<group>"; };
+		9202ACF42A3B6D3D007E33DA /* LoginPresentationLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresentationLogicSpy.swift; sourceTree = "<group>"; };
+		9202ACF62A3B6D81007E33DA /* LoginDisplayLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDisplayLogicSpy.swift; sourceTree = "<group>"; };
+		9202ACF82A3B6DA5007E33DA /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		9202ACFA2A3B6E93007E33DA /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		9202ACFE2A3B6F6A007E33DA /* UserProfileWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileWorkerSpy.swift; sourceTree = "<group>"; };
+		9202AD012A3B6FB3007E33DA /* UserProfilePresentationLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePresentationLogicSpy.swift; sourceTree = "<group>"; };
+		9202AD032A3B6FDB007E33DA /* UserProfileDisplayLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDisplayLogicSpy.swift; sourceTree = "<group>"; };
+		9202AD052A3B7003007E33DA /* UserProfileInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileInteractorTests.swift; sourceTree = "<group>"; };
+		9202AD072A3B728C007E33DA /* UserProfilePresentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePresentTests.swift; sourceTree = "<group>"; };
 		9278ABE52A3A07A1008B5F19 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		9278ABE62A3A07A1008B5F19 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
 		9278ABE72A3A07A1008B5F19 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -114,7 +143,6 @@
 		927CD7C72A3773A90007F318 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		927CD7C82A3773A90007F318 /* WeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
 		927CD7CF2A3774700007F318 /* WeatherViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeatherViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
-		927CD7D12A377B570007F318 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		9294F8252A38CABB007D899D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		9294F8282A38CD57007D899D /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		92E4E3942A3765B50092F6F5 /* Whalether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whalether.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,9 +152,6 @@
 		92E4E3A52A3765B60092F6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92E4E3AA2A3765B60092F6F5 /* WhaletherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhaletherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E4E3AE2A3765B60092F6F5 /* WhaletherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaletherTests.swift; sourceTree = "<group>"; };
-		92E4E3B42A3765B60092F6F5 /* WhaletherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhaletherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92E4E3B82A3765B60092F6F5 /* WhaletherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaletherUITests.swift; sourceTree = "<group>"; };
-		92E4E3BA2A3765B60092F6F5 /* WhaletherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaletherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AAEC2907DA9E2EE9A0B6589E /* Pods-Whalether-WhaletherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whalether-WhaletherUITests.release.xcconfig"; path = "Target Support Files/Pods-Whalether-WhaletherUITests/Pods-Whalether-WhaletherUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4101515705E904E220B48D0 /* Pods-Whalether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whalether.release.xcconfig"; path = "Target Support Files/Pods-Whalether/Pods-Whalether.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,14 +173,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92E4E3B12A3765B60092F6F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E51713C29553F3964E408705 /* Pods_Whalether_WhaletherUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -170,6 +187,86 @@
 				2BB317F21893F14651879AB1 /* Pods-WhaletherTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9202ACD62A3B6113007E33DA /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				9202ACD72A3B6123007E33DA /* Spy */,
+				9202ACDA2A3B6214007E33DA /* WeatherInteractorTests.swift */,
+				9202ACE22A3B659E007E33DA /* WeatherPresterTests.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		9202ACD72A3B6123007E33DA /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				9202ACD82A3B618A007E33DA /* WheatherWorkerSpy.swift */,
+				9202ACDC2A3B639C007E33DA /* WeatherPresenterSpy.swift */,
+				9202ACDE2A3B6550007E33DA /* WeatherDisplayLogicSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		9202ACE42A3B68F5007E33DA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				9202ACE52A3B68FD007E33DA /* Spy */,
+				9202ACEC2A3B69BF007E33DA /* RegisterInteractorTests.swift */,
+				9202ACEE2A3B6B9A007E33DA /* RegisterPresenterTests.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		9202ACE52A3B68FD007E33DA /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				9202ACE62A3B6910007E33DA /* RegisterWorkerSpy.swift */,
+				9202ACE82A3B696E007E33DA /* RegisterPresenterSpy.swift */,
+				9202ACEA2A3B6995007E33DA /* RegisterDisplaySpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		9202ACF02A3B6CC6007E33DA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9202ACF12A3B6CCF007E33DA /* Spy */,
+				9202ACFA2A3B6E93007E33DA /* LoginPresenterTests.swift */,
+				9202ACF82A3B6DA5007E33DA /* LoginInteractorTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9202ACF12A3B6CCF007E33DA /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				9202ACF22A3B6CDF007E33DA /* LoginWorkerSpy.swift */,
+				9202ACF42A3B6D3D007E33DA /* LoginPresentationLogicSpy.swift */,
+				9202ACF62A3B6D81007E33DA /* LoginDisplayLogicSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		9202ACFC2A3B6F50007E33DA /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				9202ACFD2A3B6F58007E33DA /* Spy */,
+				9202AD052A3B7003007E33DA /* UserProfileInteractorTests.swift */,
+				9202AD072A3B728C007E33DA /* UserProfilePresentTests.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		9202ACFD2A3B6F58007E33DA /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				9202ACFE2A3B6F6A007E33DA /* UserProfileWorkerSpy.swift */,
+				9202AD012A3B6FB3007E33DA /* UserProfilePresentationLogicSpy.swift */,
+				9202AD032A3B6FDB007E33DA /* UserProfileDisplayLogicSpy.swift */,
+			);
+			path = Spy;
 			sourceTree = "<group>";
 		};
 		9278ABE32A3A076F008B5F19 /* Login */ = {
@@ -292,7 +389,6 @@
 			children = (
 				92E4E3942A3765B50092F6F5 /* Whalether.app */,
 				92E4E3AA2A3765B60092F6F5 /* WhaletherTests.xctest */,
-				92E4E3B42A3765B60092F6F5 /* WhaletherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,7 +403,6 @@
 				92E4E3972A3765B50092F6F5 /* AppDelegate.swift */,
 				92E4E3A02A3765B60092F6F5 /* Assets.xcassets */,
 				92E4E3A22A3765B60092F6F5 /* LaunchScreen.storyboard */,
-				927CD7D12A377B570007F318 /* Main.storyboard */,
 				92E4E3A52A3765B60092F6F5 /* Info.plist */,
 				9278ABFB2A3A990A008B5F19 /* GoogleService-Info.plist */,
 			);
@@ -317,6 +412,10 @@
 		92E4E3AD2A3765B60092F6F5 /* WhaletherTests */ = {
 			isa = PBXGroup;
 			children = (
+				9202ACFC2A3B6F50007E33DA /* UserProfile */,
+				9202ACF02A3B6CC6007E33DA /* Login */,
+				9202ACE42A3B68F5007E33DA /* Register */,
+				9202ACD62A3B6113007E33DA /* Weather */,
 				92E4E3AE2A3765B60092F6F5 /* WhaletherTests.swift */,
 			);
 			path = WhaletherTests;
@@ -325,8 +424,6 @@
 		92E4E3B72A3765B60092F6F5 /* WhaletherUITests */ = {
 			isa = PBXGroup;
 			children = (
-				92E4E3B82A3765B60092F6F5 /* WhaletherUITests.swift */,
-				92E4E3BA2A3765B60092F6F5 /* WhaletherUITestsLaunchTests.swift */,
 			);
 			path = WhaletherUITests;
 			sourceTree = "<group>";
@@ -382,26 +479,6 @@
 			productReference = 92E4E3AA2A3765B60092F6F5 /* WhaletherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		92E4E3B32A3765B60092F6F5 /* WhaletherUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92E4E3C42A3765B60092F6F5 /* Build configuration list for PBXNativeTarget "WhaletherUITests" */;
-			buildPhases = (
-				F67FCA7DC812DD7D5955EA21 /* [CP] Check Pods Manifest.lock */,
-				92E4E3B02A3765B60092F6F5 /* Sources */,
-				92E4E3B12A3765B60092F6F5 /* Frameworks */,
-				92E4E3B22A3765B60092F6F5 /* Resources */,
-				E8AA35516A3C93D768E8A65D /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				92E4E3B62A3765B60092F6F5 /* PBXTargetDependency */,
-			);
-			name = WhaletherUITests;
-			productName = WhaletherUITests;
-			productReference = 92E4E3B42A3765B60092F6F5 /* WhaletherUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -416,10 +493,6 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					92E4E3A92A3765B60092F6F5 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 92E4E3932A3765B50092F6F5;
-					};
-					92E4E3B32A3765B60092F6F5 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 92E4E3932A3765B50092F6F5;
 					};
@@ -440,7 +513,6 @@
 			targets = (
 				92E4E3932A3765B50092F6F5 /* Whalether */,
 				92E4E3A92A3765B60092F6F5 /* WhaletherTests */,
-				92E4E3B32A3765B60092F6F5 /* WhaletherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -455,7 +527,6 @@
 				9278ABF82A3A0B10008B5F19 /* ForecastTableViewCell.xib in Resources */,
 				927CD7D02A3774700007F318 /* WeatherViewControllerStoryboard.storyboard in Resources */,
 				92E4E3A12A3765B60092F6F5 /* Assets.xcassets in Resources */,
-				927CD7D22A377B570007F318 /* Main.storyboard in Resources */,
 				9278ABFC2A3A990A008B5F19 /* GoogleService-Info.plist in Resources */,
 				9278AC0B2A3A9CB0008B5F19 /* RegisterViewControllerStoryboard.storyboard in Resources */,
 				9278AC1F2A3ADC92008B5F19 /* UserProfileStoryboard.storyboard in Resources */,
@@ -463,13 +534,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		92E4E3A82A3765B60092F6F5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92E4E3B22A3765B60092F6F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,45 +604,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E8AA35516A3C93D768E8A65D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Whalether-WhaletherUITests/Pods-Whalether-WhaletherUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Whalether-WhaletherUITests/Pods-Whalether-WhaletherUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Whalether-WhaletherUITests/Pods-Whalether-WhaletherUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F67FCA7DC812DD7D5955EA21 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Whalether-WhaletherUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -624,16 +649,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9202ACDF2A3B6550007E33DA /* WeatherDisplayLogicSpy.swift in Sources */,
+				9202ACED2A3B69BF007E33DA /* RegisterInteractorTests.swift in Sources */,
+				9202ACF32A3B6CDF007E33DA /* LoginWorkerSpy.swift in Sources */,
+				9202AD042A3B6FDB007E33DA /* UserProfileDisplayLogicSpy.swift in Sources */,
+				9202ACDD2A3B639C007E33DA /* WeatherPresenterSpy.swift in Sources */,
+				9202ACF52A3B6D3D007E33DA /* LoginPresentationLogicSpy.swift in Sources */,
+				9202AD082A3B728C007E33DA /* UserProfilePresentTests.swift in Sources */,
+				9202AD062A3B7003007E33DA /* UserProfileInteractorTests.swift in Sources */,
+				9202ACE72A3B6910007E33DA /* RegisterWorkerSpy.swift in Sources */,
+				9202ACFF2A3B6F6A007E33DA /* UserProfileWorkerSpy.swift in Sources */,
+				9202ACE32A3B659E007E33DA /* WeatherPresterTests.swift in Sources */,
+				9202ACDB2A3B6214007E33DA /* WeatherInteractorTests.swift in Sources */,
+				9202ACFB2A3B6E93007E33DA /* LoginPresenterTests.swift in Sources */,
+				9202ACEB2A3B6995007E33DA /* RegisterDisplaySpy.swift in Sources */,
+				9202ACD92A3B618A007E33DA /* WheatherWorkerSpy.swift in Sources */,
+				9202AD022A3B6FB3007E33DA /* UserProfilePresentationLogicSpy.swift in Sources */,
+				9202ACE92A3B696E007E33DA /* RegisterPresenterSpy.swift in Sources */,
+				9202ACEF2A3B6B9A007E33DA /* RegisterPresenterTests.swift in Sources */,
+				9202ACF72A3B6D81007E33DA /* LoginDisplayLogicSpy.swift in Sources */,
+				9202ACF92A3B6DA5007E33DA /* LoginInteractorTests.swift in Sources */,
 				92E4E3AF2A3765B60092F6F5 /* WhaletherTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92E4E3B02A3765B60092F6F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				92E4E3B92A3765B60092F6F5 /* WhaletherUITests.swift in Sources */,
-				92E4E3BB2A3765B60092F6F5 /* WhaletherUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,11 +680,6 @@
 			isa = PBXTargetDependency;
 			target = 92E4E3932A3765B50092F6F5 /* Whalether */;
 			targetProxy = 92E4E3AB2A3765B60092F6F5 /* PBXContainerItemProxy */;
-		};
-		92E4E3B62A3765B60092F6F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 92E4E3932A3765B50092F6F5 /* Whalether */;
-			targetProxy = 92E4E3B52A3765B60092F6F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -880,42 +911,6 @@
 			};
 			name = Release;
 		};
-		92E4E3C52A3765B60092F6F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5855D20EE7C8ABEA716B1781 /* Pods-Whalether-WhaletherUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Natthaaek.F.WhaletherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Whalether;
-			};
-			name = Debug;
-		};
-		92E4E3C62A3765B60092F6F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAEC2907DA9E2EE9A0B6589E /* Pods-Whalether-WhaletherUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Natthaaek.F.WhaletherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Whalether;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -942,15 +937,6 @@
 			buildConfigurations = (
 				92E4E3C22A3765B60092F6F5 /* Debug */,
 				92E4E3C32A3765B60092F6F5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		92E4E3C42A3765B60092F6F5 /* Build configuration list for PBXNativeTarget "WhaletherUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92E4E3C52A3765B60092F6F5 /* Debug */,
-				92E4E3C62A3765B60092F6F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

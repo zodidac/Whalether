@@ -14,9 +14,9 @@ class RegisterInteractor: RegisterBusinessLogic, RegisterDataStore {
     
     func validateRegisterInfo(request: Register.Registration.Request) {
         if request.email.isEmpty || request.password.isEmpty || request.rePasswrd.isEmpty {
-            presenter?.presentRegisterInfoFailed(message: "โปรดระบุข้อมูล")
+            presenter?.presentRegisterInfoFailed(message: "Please specify information")
         } else if request.password != request.rePasswrd {
-            presenter?.presentRegisterInfoFailed(message: "รหัสผ่านไม่ตรงกัน")
+            presenter?.presentRegisterInfoFailed(message: "Password didn't match")
         } else {
             worker.registerWithFirebase(request: request) {[weak self] result in
                 guard let self = self else { return }
